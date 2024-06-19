@@ -1,0 +1,22 @@
+{
+  "name": "cypress-bdd-framework",
+  "version": "1.0.0",
+  "description": "This a cypress BDD framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.7",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.1",
+    "cypress": "^13.11.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/e2e/stepDefinitions/*spec.js",
+    "filterSteps": true,
+    "omitFiltered": true
+  }
+}
